@@ -3,3 +3,4 @@ customer_configs/
 *.json
 *.txt
 *.xlsx
+__pycache__/
