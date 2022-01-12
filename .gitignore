@@ -2,3 +2,4 @@ confparser/
 customer_configs/
 *.json
 *.txt
+*.xlsx
