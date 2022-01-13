@@ -54,7 +54,9 @@ def parseAllConf():
                                     'dot1x_mode':None
                                 }
                             })
-                            print(last_key+"\n"+line)
+                            #print(last_key+"\n"+line)
+                        if "switchport mode private-vlan" in line:
+                            print(txt_file+"\n"+last_key+"\n"+line)
                         #If we previously confirmed this is an access switchport, and we find that "dot1x pae authenticator" exists on the interface
                         if re.match(reg_dot1x,line) and access_port:
                             #Set dot1x enabled to true

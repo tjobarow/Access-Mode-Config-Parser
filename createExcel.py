@@ -56,7 +56,7 @@ def createExcel():
         #For each interface object in the json file. (Key contains dict key, while value holds dict
         # that contains the info we need)
         for key,value in json_file.items():
-            print(value)
+            print(hostname+ " - " + str(value))
             #Set cell A{row_index} (ex: A2 if we are on 2nd row) to have the interface name
             # We split on a whitespace character because the value in the dict is 
             # "interface FastEthernet4/0/34" for example, but we just want 

@@ -3,3 +3,4 @@ confparser/
 *.txt
 *.xlsx
 __pycache__/
+.DS_Store
